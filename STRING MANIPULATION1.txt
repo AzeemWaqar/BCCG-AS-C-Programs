@@ -1,0 +1,28 @@
+Declare str1 : String
+Declare str2 : String
+Declare part1 : String
+Declare part2 : String
+Declare Finalstr : String
+Declare SpacePos : Integer
+
+str1 = ""
+str2 = ""
+part1 = ""
+part2 = ""
+Finalstr = ""
+SpacePos = 0 
+
+OUTPUT "Enter the First String : "
+Input str1
+
+OUTPUT "Enter the Second String : "
+Input str2
+
+SpacePos = Locate(str1, ' ')
+part1 = Left(str1, SpacePos)
+
+SpacePos = Locate(str2, ' ')
+part2 = Right(part2, Length(part2) - SpacePos)
+
+Finalstr = part1 & part2
+Output Finalstr
